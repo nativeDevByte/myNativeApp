@@ -5,7 +5,8 @@ const EnterMobileScreen = ({ navigation }: any) => {
   const [mobile, setMobile] = useState("");
 
   const handleNext = () => {
-    // Send mobile number to the backend here
+    // Make API call to send the mobile number to the backend
+    // const response = await api.post("/send-otp", { mobile});
     navigation.navigate("EnterOTP", { mobile });
   };
 

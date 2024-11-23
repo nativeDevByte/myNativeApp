@@ -23,7 +23,7 @@ const HomeScreen = () => {
     >
       <Tab.Screen
         name="Tab1"
-        component={() => <TabScreen title="Tab 1" />}
+        children={() => <TabScreen title="Tab 1" />}
         options={{
           tabBarLabel: "Tab 1",
           tabBarIcon: ({ color }) => (
@@ -33,7 +33,7 @@ const HomeScreen = () => {
       />
       <Tab.Screen
         name="Tab2"
-        component={() => <TabScreen title="Tab 2" />}
+        children={() => <TabScreen title="Tab 2" />}
         options={{
           tabBarLabel: "Tab 2",
           tabBarIcon: ({ color }) => (
@@ -43,17 +43,17 @@ const HomeScreen = () => {
       />
       <Tab.Screen
         name="Tab3"
-        component={() => <TabScreen title="Tab 3" />}
         options={{
           tabBarLabel: "Tab 3",
           tabBarIcon: ({ color }) => (
             <MaterialIcons name="notifications" size={24} color={color} />
           ),
         }}
+        children={() => <TabScreen title="Tab 3" />}
       />
       <Tab.Screen
         name="Tab4"
-        component={() => <TabScreen title="Tab 4" />}
+        children={() => <TabScreen title="Tab 4" />}
         options={{
           tabBarLabel: "Tab 4",
           tabBarIcon: ({ color }) => (

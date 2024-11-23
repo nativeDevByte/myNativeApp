@@ -9,11 +9,12 @@ const EnterOTPScreen = ({ route, navigation }: any) => {
 
   const verifyOTP = async () => {
     try {
-      const response = await api.post("/verify-otp", { mobile, otp });
-      const { token } = response.data;
+      // const response = await api.post("/verify-otp", { mobile, otp });
+      // const { token } = response.data;
 
       // Store token in AsyncStorage
-      await AsyncStorage.setItem("token", token);
+      // await AsyncStorage.setItem("token", token);
+      await AsyncStorage.setItem("token", "AuthToken");
 
       // Navigate to Home
       navigation.reset({
