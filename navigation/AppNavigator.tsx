@@ -9,8 +9,16 @@ const Stack = createStackNavigator();
 const AppNavigator = () => {
   return (
     <Stack.Navigator initialRouteName="EnterMobile">
-      <Stack.Screen name="EnterMobile" component={EnterMobileScreen} />
-      <Stack.Screen name="EnterOTP" component={EnterOTPScreen} />
+      <Stack.Screen
+        name="EnterMobile"
+        component={EnterMobileScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="EnterOTP"
+        component={EnterOTPScreen}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen
         name="Home"
         component={HomeScreen}
